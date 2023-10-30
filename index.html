@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="dom.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <p>Used Car Sale</p>
+    </nav>
+    <header>
+      <p>Buy from a selection of our used cars today!</p>
+    </header>
+    <div class="filters">
+      <p>Filter:</p>
+      <input
+        type="text"
+        class="year-filter"
+        id="min-year"
+        placeholder="Min. Year"
+      />
+      <input
+        type="text"
+        class="year-filter"
+        id="max-year"
+        placeholder="Max Year"
+      />
+      <select id="car-make" class="dropdown">
+        <option value="Any">Any Make</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Kia">Kia</option>
+        <option value="Dodge">Dodge</option>
+        <option value="Cadillac">Cadillac</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Lexus">Lexus</option>
+        <option value="BMW">BMW</option>
+      </select>
+      <input type="text" class="max-mileage" placeholder="Mileage" />
+      <input type="text" class="max-price" placeholder="Price" />
+      <select class="dropdown" id="color">
+        <option value="Any">Any Color</option>
+        <option value="Silver">Silver</option>
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="Red">Red</option>
+        <option value="Gray">Gray</option>
+        <option value="Green">Green</option>
+      </select>
+      <button class="filter-button">Submit</button>
+    </div>
+    <div class="car-cards"></div>
+  </body>
+</html>
